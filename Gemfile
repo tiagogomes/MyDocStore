@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '2.3.17'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'rake', '0.8.7'
-gem 'rdoc', '>= 2.4.2'
 
 # bundler requires these gems in all environments
 # gem 'nokogiri', '1.4.2'
@@ -19,3 +18,11 @@ group :test do
   # gem 'rspec'
   # gem 'faker'
 end
+
+group :assets do
+
+end
+
+gem 'simple_form'
+
+gem 'devise', '1.0.6'

@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.devise_for :users, :as => "account", :path_names => { :sign_in => 'login', :sign_out => 'logout', :sign_up => 'register'}
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -40,4 +42,6 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+
+  map.root :controller => 'home'
 end
